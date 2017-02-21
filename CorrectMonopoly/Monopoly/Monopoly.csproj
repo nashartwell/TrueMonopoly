@@ -1,0 +1,361 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8D6A8347-D262-4004-8126-6CD4BE7292A0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Monopoly</RootNamespace>
+    <AssemblyName>Monopoly</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="build.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="build.Designer.cs">
+      <DependentUpon>build.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="options.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="options.Designer.cs">
+      <DependentUpon>options.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Server.cs" />
+    <Compile Include="start.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="start.Designer.cs">
+      <DependentUpon>start.cs</DependentUpon>
+    </Compile>
+    <Compile Include="trade.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="trade.Designer.cs">
+      <DependentUpon>trade.cs</DependentUpon>
+    </Compile>
+    <Compile Include="win.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="win.Designer.cs">
+      <DependentUpon>win.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="build.resx">
+      <DependentUpon>build.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="options.resx">
+      <DependentUpon>options.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="start.resx">
+      <DependentUpon>start.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="trade.resx">
+      <DependentUpon>trade.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="win.resx">
+      <DependentUpon>win.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\board.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\board1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\board2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\house.png" />
+    <None Include="Resources\yellow33.png" />
+    <None Include="Resources\yellow23.png" />
+    <None Include="Resources\yellow13.png" />
+    <None Include="Resources\red33.png" />
+    <None Include="Resources\red23.png" />
+    <None Include="Resources\red13.png" />
+    <None Include="Resources\pink32.png" />
+    <None Include="Resources\pink22.png" />
+    <None Include="Resources\pink12.png" />
+    <None Include="Resources\orange32.png" />
+    <None Include="Resources\orange22.png" />
+    <None Include="Resources\orange12.png" />
+    <None Include="Resources\lightblue33.png" />
+    <None Include="Resources\lightblue23.png" />
+    <None Include="Resources\lightblue13.png" />
+    <None Include="Resources\green33.png" />
+    <None Include="Resources\green23.png" />
+    <None Include="Resources\green13.png" />
+    <None Include="Resources\darkblue23.png" />
+    <None Include="Resources\darkblue13.png" />
+    <None Include="Resources\lightblue2_small1.png" />
+    <None Include="Resources\yellow3_small.png" />
+    <None Include="Resources\yellow32.png" />
+    <None Include="Resources\yellow2_small.png" />
+    <None Include="Resources\yellow22.png" />
+    <None Include="Resources\yellow1_small.png" />
+    <None Include="Resources\yellow12.png" />
+    <None Include="Resources\red3_small.png" />
+    <None Include="Resources\red32.png" />
+    <None Include="Resources\red2_small.png" />
+    <None Include="Resources\red22.png" />
+    <None Include="Resources\red1_small.png" />
+    <None Include="Resources\red12.png" />
+    <None Include="Resources\pink3_small.png" />
+    <None Include="Resources\pink31.png" />
+    <None Include="Resources\pink2_small.png" />
+    <None Include="Resources\pink21.png" />
+    <None Include="Resources\pink1_small.png" />
+    <None Include="Resources\pink11.png" />
+    <None Include="Resources\orange3_small.png" />
+    <None Include="Resources\orange31.png" />
+    <None Include="Resources\orange2_small.png" />
+    <None Include="Resources\orange21.png" />
+    <None Include="Resources\orange1_small.png" />
+    <None Include="Resources\orange11.png" />
+    <None Include="Resources\lightblue3_small.png" />
+    <None Include="Resources\lightblue32.png" />
+    <None Include="Resources\lightblue2_small.png" />
+    <None Include="Resources\lightblue22.png" />
+    <None Include="Resources\lightblue1_small1.png" />
+    <None Include="Resources\lightblue12.png" />
+    <None Include="Resources\green3_small.png" />
+    <None Include="Resources\green32.png" />
+    <None Include="Resources\green2_small.png" />
+    <None Include="Resources\green22.png" />
+    <None Include="Resources\green1_small.png" />
+    <None Include="Resources\green12.png" />
+    <None Include="Resources\darkblue22.png" />
+    <None Include="Resources\darkblue1_small1.png" />
+    <None Include="Resources\darkblue12.png" />
+    <None Include="Resources\lightblue1_small.png" />
+    <None Include="Resources\lightblue31.png" />
+    <None Include="Resources\lightblue21.png" />
+    <None Include="Resources\lightblue11.png" />
+    <None Include="Resources\green31.png" />
+    <None Include="Resources\green21.png" />
+    <None Include="Resources\green11.png" />
+    <None Include="Resources\darkblue21.png" />
+    <None Include="Resources\darkblue11.png" />
+    <None Include="Resources\darkblue2_small.png" />
+    <None Include="Resources\darkblue1_small.png" />
+    <None Include="Resources\brown1_small.png" />
+    <None Include="Resources\brown2_small.png" />
+    <None Include="Resources\brown12.png" />
+    <None Include="Resources\brown21.png" />
+    <None Include="Resources\brown1_small1.png" />
+    <None Include="Resources\brown13.png" />
+    <None Include="Resources\brown1_small2.png" />
+    <None Include="Resources\brown22.png" />
+    <None Include="Resources\brown2_small1.png" />
+    <None Include="Resources\brown23.png" />
+    <None Include="Resources\brown14.png" />
+    <Content Include="Resources\cc1.png" />
+    <Content Include="Resources\cc10.png" />
+    <None Include="Resources\win1.gif" />
+    <None Include="Resources\YOUWIN.png" />
+    <None Include="Resources\win.gif" />
+    <None Include="Resources\optoons1.png" />
+    <None Include="Resources\optoons.png" />
+    <None Include="Resources\start.png" />
+    <None Include="Resources\cc101.png" />
+    <Content Include="Resources\cc11.png" />
+    <None Include="Resources\cc111.png" />
+    <Content Include="Resources\cc12.png" />
+    <None Include="Resources\cc121.png" />
+    <Content Include="Resources\cc13.png" />
+    <None Include="Resources\cc131.png" />
+    <Content Include="Resources\cc14.png" />
+    <None Include="Resources\cc141.png" />
+    <Content Include="Resources\cc15.png" />
+    <None Include="Resources\cc16.png" />
+    <None Include="Resources\cc151.png" />
+    <Content Include="Resources\cc2.png" />
+    <None Include="Resources\cc21.png" />
+    <Content Include="Resources\cc3.png" />
+    <None Include="Resources\cc31.png" />
+    <Content Include="Resources\cc4.png" />
+    <None Include="Resources\cc41.png" />
+    <Content Include="Resources\cc5.png" />
+    <None Include="Resources\cc51.png" />
+    <Content Include="Resources\cc6.png" />
+    <None Include="Resources\cc61.png" />
+    <Content Include="Resources\cc7.png" />
+    <None Include="Resources\cc71.png" />
+    <Content Include="Resources\cc8.png" />
+    <None Include="Resources\cc81.png" />
+    <Content Include="Resources\cc9.png" />
+    <None Include="Resources\cc91.png" />
+    <Content Include="Resources\chance1.png" />
+    <Content Include="Resources\chance10.png" />
+    <None Include="Resources\chance101.png" />
+    <Content Include="Resources\chance11.png" />
+    <None Include="Resources\chance111.png" />
+    <Content Include="Resources\chance12.png" />
+    <None Include="Resources\chance121.png" />
+    <Content Include="Resources\chance13.png" />
+    <None Include="Resources\chance131.png" />
+    <Content Include="Resources\chance14.png" />
+    <None Include="Resources\chance141.png" />
+    <Content Include="Resources\chance15.png" />
+    <None Include="Resources\chance151.png" />
+    <Content Include="Resources\chance16.png" />
+    <None Include="Resources\chance17.png" />
+    <None Include="Resources\chance161.png" />
+    <Content Include="Resources\chance2.png" />
+    <None Include="Resources\chance21.png" />
+    <Content Include="Resources\chance3.png" />
+    <None Include="Resources\chance31.png" />
+    <Content Include="Resources\chance4.png" />
+    <None Include="Resources\chance41.png" />
+    <Content Include="Resources\chance5.png" />
+    <None Include="Resources\chance51.png" />
+    <Content Include="Resources\chance6.png" />
+    <None Include="Resources\chance61.png" />
+    <Content Include="Resources\chance7.png" />
+    <None Include="Resources\chance71.png" />
+    <Content Include="Resources\chance8.png" />
+    <None Include="Resources\chance81.png" />
+    <Content Include="Resources\chance9.png" />
+    <None Include="Resources\chance91.png" />
+    <Content Include="Resources\clear.png" />
+    <None Include="Resources\redowned.png" />
+    <None Include="Resources\pinkowned.png" />
+    <None Include="Resources\greenowned.png" />
+    <None Include="Resources\playerpiece32.png" />
+    <None Include="Resources\playerpiece42.png" />
+    <None Include="Resources\playerpiece22.png" />
+    <None Include="Resources\playerpiece12.png" />
+    <None Include="Resources\playerpiece41.png" />
+    <None Include="Resources\playerpiece31.png" />
+    <None Include="Resources\playerpiece21.png" />
+    <None Include="Resources\playerpiece11.png" />
+    <None Include="Resources\playerpiece4.png" />
+    <None Include="Resources\playerpiece3.png" />
+    <None Include="Resources\playerpiece2.png" />
+    <None Include="Resources\board4.png" />
+    <None Include="Resources\playerpiece1.png" />
+    <None Include="Resources\dice6.png" />
+    <None Include="Resources\dice5.png" />
+    <None Include="Resources\dice4.png" />
+    <None Include="Resources\dice3.png" />
+    <None Include="Resources\dice2.png" />
+    <None Include="Resources\dice1.png" />
+    <None Include="Resources\utility21.png" />
+    <None Include="Resources\utility11.png" />
+    <None Include="Resources\rr4.png" />
+    <None Include="Resources\rr3.png" />
+    <None Include="Resources\rr21.png" />
+    <None Include="Resources\rr11.png" />
+    <None Include="Resources\board3.png" />
+    <None Include="Resources\blueowned.png" />
+    <Content Include="Resources\brown1.png" />
+    <None Include="Resources\yellow31.png" />
+    <None Include="Resources\yellow21.png" />
+    <None Include="Resources\yellow11.png" />
+    <None Include="Resources\utility2.png" />
+    <None Include="Resources\utility1.png" />
+    <None Include="Resources\rr2.png" />
+    <None Include="Resources\rr1.png" />
+    <None Include="Resources\red31.png" />
+    <None Include="Resources\red21.png" />
+    <None Include="Resources\red11.png" />
+    <None Include="Resources\green3.png" />
+    <None Include="Resources\green2.png" />
+    <None Include="Resources\green1.png" />
+    <None Include="Resources\darkblue2.png" />
+    <None Include="Resources\darkblue1.png" />
+    <None Include="Resources\brown11.png" />
+    <None Include="Resources\none.png" />
+    <None Include="Resources\yellow3.png" />
+    <None Include="Resources\yellow2.png" />
+    <None Include="Resources\yellow1.png" />
+    <None Include="Resources\red3.png" />
+    <None Include="Resources\red2.png" />
+    <None Include="Resources\red1.png" />
+    <None Include="Resources\pink3.png" />
+    <None Include="Resources\pink2.png" />
+    <None Include="Resources\pink1.png" />
+    <None Include="Resources\orange3.png" />
+    <None Include="Resources\orange2.png" />
+    <None Include="Resources\orange1.png" />
+    <None Include="Resources\lightblue3.png" />
+    <None Include="Resources\lightblue2.png" />
+    <None Include="Resources\lightblue1.png" />
+    <None Include="Resources\brown2.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

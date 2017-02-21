@@ -1,0 +1,28 @@
+C:\Users\Nick\Google Drive\C# Stuffs\Monopoly\Monopoly\bin\Release\Monopoly.exe
+C:\Users\Nick\Google Drive\C# Stuffs\Monopoly\Monopoly\bin\Release\Monopoly.pdb
+C:\Users\Nick\Google Drive\C# Stuffs\Monopoly\Monopoly\obj\x86\Release\Monopoly.Form1.resources
+C:\Users\Nick\Google Drive\C# Stuffs\Monopoly\Monopoly\obj\x86\Release\Monopoly.Properties.Resources.resources
+C:\Users\Nick\Google Drive\C# Stuffs\Monopoly\Monopoly\obj\x86\Release\Monopoly.csproj.GenerateResource.Cache
+C:\Users\Nick\Google Drive\C# Stuffs\Monopoly\Monopoly\obj\x86\Release\Monopoly.exe
+C:\Users\Nick\Google Drive\C# Stuffs\Monopoly\Monopoly\obj\x86\Release\Monopoly.pdb
+D:\Users\Dan\Google Drive\C# Stuffs\Monopoly\Monopoly\bin\Release\Monopoly.exe
+D:\Users\Dan\Google Drive\C# Stuffs\Monopoly\Monopoly\bin\Release\Monopoly.pdb
+D:\Users\Dan\Google Drive\C# Stuffs\Monopoly\Monopoly\obj\x86\Release\ResolveAssemblyReference.cache
+D:\Users\Dan\Google Drive\C# Stuffs\Monopoly\Monopoly\obj\x86\Release\Monopoly.Form1.resources
+D:\Users\Dan\Google Drive\C# Stuffs\Monopoly\Monopoly\obj\x86\Release\Monopoly.Properties.Resources.resources
+D:\Users\Dan\Google Drive\C# Stuffs\Monopoly\Monopoly\obj\x86\Release\GenerateResource.read.1.tlog
+D:\Users\Dan\Google Drive\C# Stuffs\Monopoly\Monopoly\obj\x86\Release\GenerateResource.write.1.tlog
+D:\Users\Dan\Google Drive\C# Stuffs\Monopoly\Monopoly\obj\x86\Release\Monopoly.exe
+D:\Users\Dan\Google Drive\C# Stuffs\Monopoly\Monopoly\obj\x86\Release\Monopoly.pdb
+E:\CorrectMonopoly\Monopoly\bin\Release\Monopoly.exe
+E:\CorrectMonopoly\Monopoly\bin\Release\Monopoly.pdb
+E:\CorrectMonopoly\Monopoly\obj\x86\Release\Monopoly.build.resources
+E:\CorrectMonopoly\Monopoly\obj\x86\Release\Monopoly.Form1.resources
+E:\CorrectMonopoly\Monopoly\obj\x86\Release\Monopoly.options.resources
+E:\CorrectMonopoly\Monopoly\obj\x86\Release\Monopoly.Properties.Resources.resources
+E:\CorrectMonopoly\Monopoly\obj\x86\Release\Monopoly.start.resources
+E:\CorrectMonopoly\Monopoly\obj\x86\Release\Monopoly.trade.resources
+E:\CorrectMonopoly\Monopoly\obj\x86\Release\Monopoly.win.resources
+E:\CorrectMonopoly\Monopoly\obj\x86\Release\Monopoly.csproj.GenerateResource.Cache
+E:\CorrectMonopoly\Monopoly\obj\x86\Release\Monopoly.exe
+E:\CorrectMonopoly\Monopoly\obj\x86\Release\Monopoly.pdb
